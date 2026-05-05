@@ -1,0 +1,6 @@
+Package: ForgeSysLockIndex
+Type: Package
+Title: ForgeSysLockIndex
+Version: 0.1.0
+License: MIT
+Description: Build an R toolkit that studies lock behavior through capacity fixtures, with allocation and spill reports and fixture-scale datasets.
