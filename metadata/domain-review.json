@@ -1,0 +1,73 @@
+{
+  "repo": "forge-sys-lock-index",
+  "language": "R",
+  "category": "Systems programming",
+  "goal": "Build an R toolkit that studies lock behavior through capacity fixtures, with allocation and spill reports and fixture-scale datasets.",
+  "review_model": {
+    "terms": [
+      "allocation pressure",
+      "dirty state",
+      "guard slack",
+      "layout drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "allocation pressure",
+      "signal": 78,
+      "slack": 42,
+      "drag": 27,
+      "confidence": 92,
+      "score": 209,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "dirty state",
+      "signal": 52,
+      "slack": 23,
+      "drag": 27,
+      "confidence": 81,
+      "score": 127,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "guard slack",
+      "signal": 67,
+      "slack": 50,
+      "drag": 29,
+      "confidence": 66,
+      "score": 163,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "layout drift",
+      "signal": 87,
+      "slack": 21,
+      "drag": 14,
+      "confidence": 50,
+      "score": 203,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "allocation pressure",
+      "signal": 92,
+      "slack": 22,
+      "drag": 31,
+      "confidence": 58,
+      "score": 171,
+      "lane": "ship"
+    }
+  ]
+}
