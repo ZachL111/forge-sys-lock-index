@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,64,83,16,14,7,93,review,systems programming baseline scenario exercises the review path for bounded failure handling
+pressure,76,74,25,20,8,43,review,systems programming pressure scenario exercises the review path for bounded failure handling
+surge,101,97,20,17,12,168,review,systems programming surge scenario exercises the review path for bounded failure handling
+degraded,64,58,33,24,8,-49,review,systems programming degraded scenario exercises the review path for bounded failure handling
+recovery,84,101,18,13,9,160,review,systems programming recovery scenario exercises the review path for bounded failure handling
+boundary,74,83,25,15,7,79,review,systems programming boundary scenario exercises the review path for bounded failure handling
